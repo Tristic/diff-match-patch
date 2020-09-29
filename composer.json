@@ -1,5 +1,5 @@
 {
-    "name": "eSmiley/diff-match-patch",
+    "name": "esmiley/diff-match-patch",
     "description": "fork of https://github.com/yetanotherape/diff-match-patch",
     "type": "library",
     "keywords": ["Diff", "Match", "Patch", "Fuzzy search"],
