@@ -287,7 +287,7 @@ class DiffToolkit {
         // Simple string concat is even faster than implode() in PHP.
         $chars = '';
 
-        $delimiter = iconv('UTF-8', mb_internal_encoding(), "\n");
+        $delimiter = iconv('UTF-8', mb_internal_encoding(), " ");
 
         // TODO optimize code
         // explode('\n', $text) would temporarily double our memory footprint,

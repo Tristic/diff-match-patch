@@ -46,7 +46,7 @@ class Diff
     /**
      * Number of characters at which line mode speedup is employed.
      */
-    const LINEMODE_THRESOLD = 100;
+    const LINEMODE_THRESOLD = 10;
 
     /**
      * @var float Number of seconds to map a diff before giving up (0 for infinity).
@@ -697,9 +697,9 @@ class Diff
             ), $data);
 
             if ($op == self::INSERT) {
-                $html .= '<ins style="background:#e6ffe6;">' . $text . '</ins>';
+                $html .= '<ins>' . $text . '</ins>';
             } elseif ($op == self::DELETE) {
-                $html .= '<del style="background:#ffe6e6;">' . $text . '</del>';
+                $html .= '<del>' . $text . '</del>';
             } else {
                 $html .= '<span>' . $text . '</span>';
             }
